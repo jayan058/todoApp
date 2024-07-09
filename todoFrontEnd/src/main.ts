@@ -9,5 +9,12 @@ document
   .getElementById("updateTodoForm")
   ?.addEventListener("submit", updateTodo);
 
+
+  document.getElementById("closeModal")?.addEventListener("click", ()=>{
+    const modal = document.getElementById("updateTodoModal");
+    if (modal) {
+      modal.style.display = "none";
+    }
+  });
 // Fetch todos when the page loads
 fetchTodos();

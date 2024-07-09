@@ -1,0 +1,130 @@
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 80vh;
+  overflow-y: auto;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li.done {
+  background-color: #c3e6cb; /* Bootstrap success color for done todos */
+  color: #155724; /* Bootstrap success text color */
+}
+
+li.not-done {
+  background-color: #f5c6cb; /* Bootstrap danger color for not done todos */
+  color: #721c24; /* Bootstrap danger text color */
+}
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  align-items: center;
+}
+
+.todoButtons button {
+  cursor: pointer;
+}
+
+.todoDescription {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+
+  align-items: center;
+}
+
+.todoForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.todoInput {
+  padding: 5px 10px;
+  width: 40%;
+}
+.todoName {
+  width: 70%;
+
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-family: cursive;
+  margin: auto;
+  max-width: max-content;
+}
+
+.statusText {
+  font-weight: bolder;
+}
+
+.updateTodoForm {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+.updateTodoText {
+  width: 50%;
+}
